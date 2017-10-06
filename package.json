@@ -1,0 +1,28 @@
+{
+	"name": "parse-har",
+	"version": "1.0.0",
+	"description": "Parse HAR files",
+	"main": "lib/index.js",
+	"typings": "lib/index.d.ts",
+	"scripts": {
+		"clean": "rimraf lib",
+		"lint": "tslint --force --type-check --project ./tsconfig.json --exclude src/**/*.d.ts src/**/*.ts",
+		"build": "npm run clean && npm run lint && tsc --pretty",
+		"test": "npm run build && mocha --compilers ts:ts-node/register --recursive 'test/**/*-spec.ts'",
+		"coverage": "nyc --reporter=text --reporter=html mocha --compilers ts:ts-node/register",
+		"watch": "npm run build -- --watch",
+		"watch:test": "npm run test -- --watch"
+	},
+	"author": {
+		"name": "abishop"
+	},
+	"files": [
+		"lib"
+	],
+	"devDependencies": {
+		"tslint": "^5.7.0",
+		"tslint-eslint-rules": "^4.1.1",
+		"tslint-microsoft-contrib": "^5.0.1",
+		"typescript": "^2.5.3"
+	}
+}

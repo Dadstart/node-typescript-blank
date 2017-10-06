@@ -1,0 +1,13 @@
+{
+	"typescript.tsdk": "node_modules/typescript/lib/",
+	"typescript.format.enable": true,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"tslint.enable": true,
+	"tslint.ignoreDefinitionFiles": true,
+	"tslint.rulesDirectory": [
+		"./node_modules/tslint-microsoft-contrib",
+		"./node_modules/tslint-eslint-rules/dist/rules",
+		"./node_modules/tslint-react/rules"
+	]
+}
