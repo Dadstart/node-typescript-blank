@@ -1,9 +1,9 @@
 {
 	"name": "parse-har",
 	"version": "1.0.0",
-	"description": "Parse HAR files",
-	"main": "lib/index.js",
-	"typings": "lib/index.d.ts",
+	"description": "NodeJS TypeScript empty app",
+	"main": "lib/program.js",
+	"typings": "lib/program.d.ts",
 	"scripts": {
 		"clean": "rimraf lib",
 		"lint": "tslint --force --type-check --project ./tsconfig.json --exclude src/**/*.d.ts src/**/*.ts",
